@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encriptador</title>
+    <meta name="description" content="Encriptador y desencriptador de texto simple">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <main class="contenedor__principal">
+            <a href="index.html"><img src="IMG/Logo.png" alt="Logotipo de Alura Latam"></a>
+            <section class="contenedor__principal__seccion__encriptar" >
+                <textarea class="textarea__encriptar" placeholder="Ingrese el texto aquí" rows="6"></textarea>
+                <div class="division__elementos__encriptados">
+                    <p><img class="img__warning" src="IMG/Group.png" alt="Imagen de signo de exclamación"> Solo letras minúsculas y sin acentos</p>
+                    <div class="division__botones__encriptado">
+                        <button class="button__encriptar" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="button__desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="contenedor__principal__seccion__desencriptar">
+                <div class="division__elementos__desencriptar" >
+                    <img src="IMG/Muneco.png" alt="Imagen de niño con una lupa">
+                    <div class="division__titulo__parrafo__desencriptar">
+                        <h1 style="display: none;">Ningún mensaje fue encontrado</h1>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="division__textarea__boton__desencriptar" style="display: none;">
+                    <textarea class="textarea__desencriptar" name="desencriptar" rows="6" readonly></textarea>
+                    <button class="button__copiar" onclick="copiarTextoEncriptado()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Desarrollado por Moises Silva Gonzalez (2024)
+        </footer>
+    </div>
+    <script src="JS/app.js" ></script>
+</body>
+</html>
